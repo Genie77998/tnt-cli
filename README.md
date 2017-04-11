@@ -1,10 +1,10 @@
-#[tnt-cli](https://github.com/Genie77998/tnt-cli.git) [![npm version](https://img.shields.io/npm/v/tnt-cli.svg?style=flat)](https://www.npmjs.com/package/tnt-cli)
+# [tnt-cli](https://github.com/Genie77998/tnt-cli.git) [![npm version](https://img.shields.io/npm/v/tnt-cli.svg?style=flat)](https://www.npmjs.com/package/tnt-cli)
     一个初始化开发react组件的脚手架
 
-#安装
+# 安装
     npm install tnt-cli -g
 
-或者
+    或者
 
     git clone https://github.com/Genie77998/tnt-cli.git
 
@@ -12,7 +12,7 @@
 
     npm link
 
-#使用
+# 使用
 
     打开终端输入tnt或者 tnt -h 看到如下信息则标识安装成功
 
@@ -28,9 +28,10 @@
         -h, --help     output usage information
         -V, --version  output the version number
 
-#命令
+# 命令
     
 ### init | i
+
     可以使用此命令生成自己的项目
         
         $ tnt i
