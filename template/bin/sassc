@@ -1,0 +1,28 @@
+/*
+* @Author: wj77998
+* @Date:   2017-03-10 17:29:55
+* @Email:  wj77998@qq.com
+* @Last Modified by:   wj77998
+* @Last Modified time: 2017-03-10 17:30:11
+*/
+
+'use strict';
+const sass = require('node-sass');
+const fs = require('fs');
+const path = require('path');
+sass.render({
+  file: path.join(process.cwd(),'assets/index.scss'),
+  outputStyle: 'compressed',
+}, function(error, result) {
+  if (error) {
+    console.log(error);
+  }else {
+  		fs.writeFile(path.join(process.cwd(),'assets/index.css'), result.css, function(err){
+		    if(!err){
+		      	console.log("build scss success");
+		    }else{
+		    	console.log(err);
+		    }
+	  	});
+  }
+});
